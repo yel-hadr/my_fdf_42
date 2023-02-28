@@ -1,0 +1,11 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/yel-hadr/Desktop/fdf_42-bonus 2'
+make -C ./fdf_util/get_next_line
+make -C ./fdf_util/libft
+make -C ./fdf_util/printf
+ 
+cc -Wall -Wextra -Werror -fsanitize=address -c fdf_util/evant_m.c -o fdf_util/evant_m.o
+cc -Wall -Wextra -Werror -fsanitize=address -c fdf.c -o fdf.o
+cc -Wall -Wextra -Werror -fsanitize=address ./fdf_util/baffering_map.o ./fdf_util/check_map.o ./fdf_util/ft_fdf_utile.o ./fdf_util/ft_len_win.o ./fdf_util/ft_line.o ./fdf_util/open_mlx_win.o ./fdf_util/ft_atoi_base.o ./fdf_util/ft_split_line.o ./fdf_util/ft_rgb.o ./fdf_util/ft_hook.o ./fdf_util/evant_m.o fdf.o -lm ./fdf_util/*/*.a -lmlx -framework OpenGL -framework AppKit -o exut_fdf
+make: Leaving directory `/Users/yel-hadr/Desktop/fdf_42-bonus 2'
+ 
